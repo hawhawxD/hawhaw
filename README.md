@@ -4,7 +4,7 @@
 
 ###### I hope I don't get burn out but IF SO feel free to change some of the  rules. Make it LESS STRESSFUL at the moment until you feel you're good again and ENJOYABLE. James you're doing this to enjoy because you love it, you love inventing shit since you were a kid and you forget about it most of the time that's why im reminding you. Bonus is you might get a good future if you're good at it and obviously might retire Mom.
 
-## TARGET LANGUAGES
+### TARGET LANGUAGES
 ##### HTML CSS JS REACT TAILWIND
 ### TARGET BIG PROJECTS
 ##### YOUTUBE VIDEO CONVERTER (MP3/MP4)
@@ -12,7 +12,7 @@
 ##### TYPING SPEED TEST
 ##### 2025 PORTFOLIO (DECEMBER)
 
-## Rules
+### Rules
 - Minimum 1 website per week
 - Make sure its Clean and Concise codes (QUALITY CODES the fewer lines the better performance)
 - Make sure you understand everything (Explain to yourself if neccesary just make sure you understand everything before pushing that shit if you don't understand it, do not push it.)
@@ -26,7 +26,7 @@
 -------------
 
 
-##2025 OUTLINE
+## 2025 OUTLINE
 
 #### JAN - MARCH
 -  HTML, CSS
