@@ -2,7 +2,7 @@
 
 #### This 2025 I'm teaching myself how to become a Frontend Developer while having a full time job.
 
-######I hope I don't get burn out but IF SO feel free to change some of the  rules. Make it LESS STRESSFUL at the moment until you feel you're good again and ENJOYABLE. James you're doing this to enjoy because you love it, you love inventing shit since you were a kid and you forget about it most of the time that's why im reminding you. Bonus is you might get a good future if you're good at it and obviously might retire Mom.
+#####I hope I don't get burn out but IF SO feel free to change some of the  rules. Make it LESS STRESSFUL at the moment until you feel you're good again and ENJOYABLE. James you're doing this to enjoy because you love it, you love inventing shit since you were a kid and you forget about it most of the time that's why im reminding you. Bonus is you might get a good future if you're good at it and obviously might retire Mom.
 
 ## TARGET LANGUAGES
 ##### HTML CSS JS REACT TAILWIND
