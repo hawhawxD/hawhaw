@@ -27,14 +27,44 @@ a {
 }
 
 h1 {
-    font-size: 6rem
+    font-size: 6rem;
 }
-img {
-    height: 100%;
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-    border-radius: 6px;
+header h1,
+header p {
+    animation:  tempwidth 1s
+}
+
+
+@keyframes heroAnim {
+    0% {
+        width: 0px;
+        margin-bottom: 1000px;
+    }
+    100% {
+        width: 620px;
+        margin-bottom: 4rem;
+    }
+}
+
+@keyframes tempwidth {
+    0% {
+        width: 620px
+    }
+    100% {
+        width: 620px
+    }
+}
+
+body::-webkit-scrollbar {
+    animation: bodyscroll 1s
+}
+@keyframes bodyscroll {
+    0% {
+        display: none
+    }
+    100% {
+        display: none
+    }
 }
 
 .btn {
@@ -44,30 +74,19 @@ img {
     color: var(--text-color-a);
     cursor: pointer;
     transition: background 0.15s;
-}
-
-.btn:hover {
-    background-color: var(--primary-a);    
     border-radius: 6px;
 }
 
 main {
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
 }
 
 header {
     margin: 4rem 0;
-}
-
-.main-grid {
-    width: min(100% - 2rem, 1440px);
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
-    justify-content: center;
-    position: relative;
+    overflow: hidden;
+    animation: heroAnim 1s;
 }
 
 .project p:nth-of-type(1) {
@@ -75,7 +94,7 @@ header {
     color: var(--text-color-a);
 }
 
-.project p:nth-of-type(2) {
+.project p:nth-of-type(n+2) {
     color: var(--text-color-a1);
 }
 
@@ -89,31 +108,78 @@ header {
     border-radius: 6px
 }
 
-body.list-view .main-grid {
+ .main-grid {
     display: flex;
     flex-direction: column;
+    width: min(100% - 2rem, 1440px);
+    gap: 0.6rem;
+    position: relative;
 }
 
-body.list-view .project {
+.project {
     display: flex;
-    justify-content: space-between;
-    position: relative;
+    gap: 0.6rem;
+    align-items: center;
     cursor: pointer;
     padding: 10px;
     border-radius: 6px;
-    background-color: var(--primary);
+    background-color: var(--primary-a1);
     transition: background .15s ease-in-out
 }
 
-body.list-view .project img{
-    display: none
+.project section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%
 }
 
-body.list-view  .project:hover img{
-    display: unset;
-    position: absolute;
-    right: 50%;
-    z-index: 10;
+.project img {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+body.thumbnail-view img {
+    height: 100%;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+body.thumbnail-view .main-grid {
+    width: min(100% - 2rem, 1440px);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    justify-content: center;
+    position: relative;
+}
+
+.main-grid__nav #list-view {
+    display: none
+}
+body.thumbnail-view #thumbnail-view {
+    display: flex;
+}
+body.thumbnail-view #thumbnail-view {
+    display: none
+}
+body.thumbnail-view #list-view {
+    display: flex;
+}
+
+body.thumbnail-view .project {
+    gap: 0;
+    padding: 0;
+}
+
+
+body.thumbnail-view .project section {
+    display: flex;
+    flex-direction: column;
+    width: 100%
 }
 
 body.thumbnail-view .project {
@@ -127,7 +193,6 @@ body.thumbnail-view .project {
     overflow: hidden;
 }
 
-
 body.thumbnail-view .project section {
     background-color: var(--primary-a1);
     height: 100%;
@@ -139,19 +204,40 @@ body.thumbnail-view .project .img-holder {
     place-items: center;
 }
 
-
 body.thumbnail-view .project:hover,
-body.list-view .project:hover {
+body.list-view .project:hover,
+.project:hover,
+.main-grid__nav .btn:hover {
     background-color:var(--primary);
 }
 
 
 @media (max-width: 645px) {
     h1 {
-        font-size: 4rem
+        font-size: 3rem
     }
 
     .main-grid__nav {
         gap: 0
+    }
+
+    .main-grid__nav button svg{
+        height: 18px;
+        width: auto
+    }
+
+    .project p {
+        font-size: 14px
+    }
+
+    @keyframes heroAnim {
+        0% {
+            width: 0px;
+            margin-bottom: 1000px;
+        }
+        100% {
+            width: 315px;
+            margin-bottom: 4rem;
+        }
     }
 }

@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-    <body class="thumbnail-view">
+    <body class="">
     <main>
         <header>
             <h1 style="color: hsl(0, 0%, 80%)">My life's work.</h1>            
@@ -23,10 +23,10 @@
             <button class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: hsl(0, 0%, 80%);"><path d="M5.025 20.775A.998.998 0 0 0 6 22a1 1 0 0 0 .555-.168L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082a1 1 0 0 0-.59-1.74l-5.701-.454-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.214 4.107-1.491 6.452zM12 5.429l2.042 4.521.588.047h.001l3.972.315-3.271 2.944-.001.002-.463.416.171.597v.003l1.253 4.385L12 15.798V5.429z"></path></svg></button>
             <button class="btn">SaaS</button>
             <button class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: hsl(0, 0%, 80%);"><path d="M8 16H4l6 6V2H8zm6-11v17h2V8h4l-6-6z"></path></svg></button>
-            <button class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: hsl(0, 0%, 80%);"><path d="M9 21h12V3H3v18h6zm10-4v2h-6v-6h6v4zM15 5h4v6h-6V5h2zM5 7V5h6v6H5V7zm0 12v-6h6v6H5z"></path></svg></button>
-            <button class="btn">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: hsl(0, 0%, 80%);"><path d="M4 6h2v2H4zm0 5h2v2H4zm0 5h2v2H4zm16-8V6H8.023v2H18.8zM8 11h12v2H8zm0 5h12v2H8z"></path></svg>
-            </button>   
+            <button class="btn" onclick="toggleView()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" id="thumbnail-view" viewBox="0 0 24 24" style="fill: hsl(0, 0%, 80%);"><path d="M9 21h12V3H3v18h6zm10-4v2h-6v-6h6v4zM15 5h4v6h-6V5h2zM5 7V5h6v6H5V7zm0 12v-6h6v6H5z"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" id="list-view" viewBox="0 0 24 24" style="fill: hsl(0, 0%, 80%);"><path d="M4 6h2v2H4zm0 5h2v2H4zm0 5h2v2H4zm16-8V6H8.023v2H18.8zM8 11h12v2H8zm0 5h12v2H8z"></path></svg>
+            </button>
         </div>
         <div class="main-grid">
             <p style="position: absolute; left: 20px; top: -20px; color: hsl(0, 0%, 60%)">total: 5</p>
@@ -36,6 +36,7 @@
                 </div>
                 <section>
                     <P>solve.</P>
+                    <p>Static</p>
                     <p>January 4, 2025</p>
                 </section>
             </a>  
@@ -45,6 +46,7 @@
                 </div>
                 <section>
                     <P>godesignstudio</P>
+                    <p>Static</p>
                     <p>January 9, 2025</p>
                 </section>
             </a>      
@@ -54,6 +56,7 @@
                 </div>
                 <section>
                     <P>arcspace</P>
+                    <p>Static</p>
                     <p>January 13, 2025</p>
                 </section>
             </a>  
@@ -63,6 +66,7 @@
                 </div>
                 <section>
                     <P>stemtracks</P>
+                    <p>Static</p>
                     <p>January 15, 2025</p>
                 </section>
             </a>      
@@ -72,12 +76,13 @@
                 </div>
                 <section>
                     <P>masterpay</P>
+                    <p>Static</p>
                     <p>January 20, 2025</p>
                 </section>
             </a> 
         </div>
-        <footer style="margin-top: 4rem;"><p style="color: hsl(0, 0%, 60%);">&copy 2025 James Frederick A. Pena, All Rights Reserved.</p></footer>
+        <footer style="margin-top: 4rem;"><p style="color: hsl(0, 0%, 60%);text-align: center;">&copy 2025 James Frederick A. Pena, All Rights Reserved.</p></footer>
     </main>
-    
+    <script src="script.js"></script>
 </body>
-</html>
+</html> 
